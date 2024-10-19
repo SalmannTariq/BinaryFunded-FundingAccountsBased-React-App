@@ -1,0 +1,207 @@
+
+.oneStep{
+    border: 1px solid #B0EF96 ;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.oneStep:hover{
+    background-color: #48898f;
+}
+.add-btn{
+    background-color: #0B352B;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    /* display: none; */
+}
+.subtract-btn{
+    background-color: #0B352B;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* display: none; */
+}
+.disabled{
+    background-color: grey;
+    opacity: .1;
+}
+.access-btn{
+    background-color: #B0EF96;
+    border: none;
+    border-radius: 5px;
+    padding: .3rem .2rem;
+}
+.profit-value-text{
+    margin-top: .6rem;
+    color: #B0EF96;
+    font-size: 30px;
+}
+.month-name{
+    border: 1px dotted #B0EF96;
+    padding: .7rem;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.start-now-btn{
+    padding: .7rem 1.4rem;
+    background-color: #B0EF96;
+    border: none;
+    font-weight: bold;
+    color: #0B352B;
+}
+.start-now-btn:hover{
+    opacity: .7;
+}
+.most-popular{
+    top: -1.2%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #0B352B;
+    color: white;
+}
+.most-popular-2Step{
+    top: -1.2%;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #0B352B;
+    color: white;
+    left: 25%;
+}
+@media screen and (max-width:769px){
+
+.oneStep-rs{
+    border: 1px solid #B0EF96 ;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 80%;
+    position: relative;
+}
+.oneStep:hover{
+    background-color: #48898f;
+}
+.add-btn{
+    background-color: #0B352B;
+    border: none;
+    color: white;
+    border-radius: 50%;
+}
+.subtract-btn{
+    background-color: #0B352B;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+.disabled{
+    background-color: grey;
+    opacity: .1;
+}
+.access-btn-rs{
+    background-color: #B0EF96;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: .5rem 2rem;
+}
+.profit-value-text-rs{
+    margin-top: .6rem;
+    color: #B0EF96;
+    font-size: 40px;
+}
+.month-name{
+    border: 1px dotted #B0EF96;
+    padding: .7rem;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.start-now-btn{
+    padding: .7rem 0;
+    background-color: #B0EF96;
+    border: none;
+    font-weight: bold;
+    color: #0B352B;
+    width: 100%;
+}
+.most-popular{
+    top: 0.8%;
+    margin-left: 40%;
+}
+.price-btn{
+    padding: .7rem 2rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+.price-btn.activeClass{
+     border: 1px solid #B0EF96;
+}
+@media screen and (max-width:768px){
+    .access-btn{
+        padding: .6rem 2rem;
+        font-size: 20px;
+    }
+    .mainValue-text{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:540px){
+    .most-popular{
+        top: 0.8%;
+        margin-left: 35%;
+    }
+    .most-popular-2Step{
+        top: 0.8%;
+        margin-left: 49%;
+    }
+}
+@media screen and (max-width:426px){
+    .mainValue-text{
+        font-size: 2rem;
+    }
+    .price-btn{
+        padding: .7rem 1rem;
+    }
+    .access-btn{
+        padding: .6rem 1rem;
+    }
+    .most-popular{
+        top: 0.8%;
+        margin-left: 30%;
+    }
+    .most-popular-2Step{
+        top: 0.8%;
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width:376px){
+    .most-popular{
+        top: -0.2%;
+        margin-left: 2%;
+    }
+    .most-popular-2Step{
+        top: -0.2%;
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width:320px){
+    .access-btn{
+        font-size: 16px;
+    }
+    .price-btn{
+        padding:.5rem .6rem;
+    }
+    .most-popular{
+        top: -0.2%;
+        margin-left: 2%;
+    }
+    .most-popular-2Step{
+        top: -0.2%;
+        margin-left: 2%;
+    }
+}
+}

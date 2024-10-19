@@ -1,0 +1,33 @@
+.preSale{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preSale-btn{
+    padding: 1rem 4rem;
+    background-color: #B0EF96;
+    border: 1px solid #48898f;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+}
+.preSale-btn:hover{
+    background-color: transparent;
+    border: 1px solid #B0EF96;
+    color: #B0EF96;
+}
+
+@media screen and (max-width:426px){
+    .preSale-btn{
+        padding: 1rem 3rem;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:320px){
+    .preSale-btn{
+        padding: .7rem 2rem;
+        font-size: 17px;
+    }
+}
