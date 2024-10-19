@@ -1,0 +1,324 @@
+.navbar{
+    background-color: rgba(45, 83, 87, 0.5);
+    backdrop-filter: blur(4px);
+}
+/* Remove border from toggler */
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+}
+
+.middle-bar{
+    margin: 4px;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(50deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-48deg);
+    transform-origin: 10% 90%;
+}
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: white;
+}
+.navbar-nav{
+    margin-right: 5rem;
+}
+
+/*  */
+.container {
+    width: 100%;
+  }
+.logo{
+    width: 250px;
+    height: 80px;
+}
+.ul-bg{
+    box-shadow: inset 0 0 1.1rem 0 #B0EF96;
+    padding-right: 20px;
+    padding-left: 20px !important;
+}
+.started-btn{
+    display: none;
+}
+.login-btn{
+    background-color: #48898f;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.login-btn:hover{
+    opacity: .7;
+}
+.logout-btn{
+    background-color: #48898f;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.logout-btn:hover{
+    opacity: .7;
+}
+/*  */
+.btn{
+    background-color: #B0EF96;
+    color: #2D5357;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0 #B0EF96;
+}
+/*  */
+.btn:hover {
+    color: white;
+}
+li{
+    font-size: 20px;
+}
+li>a:hover{
+    color: #B0EF96 !important;
+}
+.ul-bg{
+    gap: 30px;
+    border-radius: 50px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.nav-btns{
+    display: flex;
+    gap: 15px;
+}
+.user-email{
+    background-color: #48898f;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+/* animation keyframes */
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
+/* Responsivness */
+@media screen and (max-width:1024px){
+    .navbar-nav{
+        margin-right: 2rem;
+    }
+    .ul-bg{
+        gap: 5px;
+    }
+    .btn{
+        padding: 8px 22px;
+        border-radius: 100px;
+        font-size: 13px;;
+    }
+    .login-btn{
+        padding: 8px 22px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:993px){
+    .started-btn{
+        display: block;
+        background-color: #48898f;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .login-btn{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .user-email{
+        display: block;
+        margin-left: auto;
+        background-color: #B0EF96;
+        color: #2D5357;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        padding: 4px 12px;
+        border-radius: 100px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .navbar-collapse {
+        height: 100vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .ul-bg{
+            gap: 15px;
+            box-shadow: none;
+            margin-top: -100px;
+            border-radius: 50px;
+            padding-right: 15px;
+            padding-left: 15px !important;
+            text-align: center;
+        }
+}
+@media screen and (max-width:768px){
+    .logo{
+        width: 170px;
+        height: 60px;
+    }
+
+
+    .container {
+        max-width: 1140px; /* Adjust max-width as needed */
+        margin: 0 auto;
+      }
+    .logo{
+        font-size: 30px;
+    }
+    .nav-btns{
+        display: none;
+    }
+    .navbar-nav{
+        margin-right: 0;
+    }
+    .navbar{
+        backdrop-filter: blur(50px);
+    }
+    .ul-bg{
+        gap: 15px;
+        box-shadow: none;
+        margin-top: -100px;
+        border-radius: 50px;
+        padding-right: 15px;
+        padding-left: 15px !important;
+    }
+    li{
+        text-align: center;
+    }
+    /* p{
+        text-align: center;
+    } */
+}
+@media screen and (max-width:426px){
+
+    .logo{
+        width: 150px;
+        height: 40px;
+    }
+    .ul-bg{
+        gap: 15px;
+        box-shadow: none;
+        border-radius: 50px;
+        padding-right: 15px;
+        padding-left: 15px !important;
+    }
+    li{
+        text-align: center;
+    }
+    li{
+        text-align: center;
+    }
+}
+@media screen and (max-width:376px){
+
+    .logo{
+        width: 160px;
+        height: 55px;
+    }
+    .ul-bg{
+        gap: 15px;
+        box-shadow: none;
+        border-radius: 50px;
+        padding-right: 15px;
+        padding-left: 15px !important;
+    }
+    li{
+        text-align: center;
+    }
+}
+@media screen and (max-width:320px){
+    .logo{
+        width: 150px;
+        height: 50px;
+    }
+
+    .ul-bg{
+        gap: 15px;
+        box-shadow: none;
+        border-radius: 50px;
+        padding-right: 15px;
+        padding-left: 15px !important;
+    }
+    .started-btn{
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    /* p{
+        text-align: center;
+    } */
+
+}
+

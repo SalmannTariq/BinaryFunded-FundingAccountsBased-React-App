@@ -1,0 +1,86 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+}
+form{
+    background-color: #2D5357;
+    border:1px solid #B0EF96 !important;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 50%;
+    gap: 20px;
+    box-shadow: 0 0 1rem 0 #B0EF96;
+}
+.input-login{
+    width: 60%;
+    padding:.5rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+
+}
+.input-login::placeholder{
+    color: #B0EF96;
+}
+.login-text{
+    color: #B0EF96;
+}
+.input-login:focus{
+    border: 1px solid #B0EF96;
+    outline: none;
+}
+.Login-btn{
+    background-color: #B0EF96;
+    border: none;
+    padding: .4rem 3rem;
+    border-radius: 10px;
+    color: #0B352B;
+    font-weight: bold;
+    font-size: 20px;
+}
+.acc-text{
+    color: white;
+}
+.register-text{
+    color: #B0EF96;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.eye-icon{
+    position: absolute;
+    right: 6%;
+    top: 32%;
+    color: #B0EF96;
+}
+@media screen and (max-width:768px){
+    form{
+        width: 80%;
+    }
+    .Login-btn{
+        padding: .4rem 2rem;
+        font-size: 18px;
+    }
+    .register-text{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:376px){
+    form{
+        width: 90%;
+    }
+    .Login-btn{
+        padding: .3rem 1rem;
+        font-size: 16px;
+    }
+    .register-text{
+        font-size: 16px;
+    }
+}

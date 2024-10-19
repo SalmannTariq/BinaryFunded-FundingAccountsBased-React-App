@@ -1,0 +1,893 @@
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+.main-section > div:first-child{
+    box-shadow: inset 0 0 1.1rem 0 #B0EF96;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+.main-section > div > p{
+    margin-bottom: 0;
+    color: white;
+}
+.main-text{
+    font-size: 70px;
+    color: #B0EF96;
+    text-align: center;
+    font-weight: bold;
+}
+.sub-text{
+    font-size: 20px;
+    color: rgb(230, 227, 227);
+    text-align: center;
+}
+.btns{
+    display: flex;
+    gap: 30px;
+}
+.demo-btn{
+    background-color: #48898f;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 11px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+
+}
+.start-btn{
+    background-color: #B0EF96;
+    color: #2D5357;
+    border: none;
+    font-weight: bold;
+    padding: 11px 25px;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0 #B0EF96;
+}
+.trust-pilot{
+    border: 1px solid #B0EF96;
+    display: block;
+    background-color: #48898f;
+    display: flex;
+    padding: 17px 5px;
+    justify-content: center;
+    border-radius: 10px;
+    width: 30%;
+}
+.trust-pilot > img{
+    width: 80%;
+}
+.social-icons{
+    display: flex;
+    gap: 30px;
+
+}
+.icon{
+    font-size: 50px;
+    color: #B0EF96;
+    border: 1px solid #48898f;
+    padding: 10px;
+    border-radius: 30px;
+}
+.icon:hover{
+    border: 1px solid #48898f;
+    background-color: transparent;
+    color: #B0EF96;
+    box-shadow: 0 0 1rem 0 #B0EF96;
+}
+.candles-section{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+
+}
+.candles-box-1{
+    width: 8%;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0.4;
+    position: relative;
+    right: 10%;
+}
+.candles-box-2{
+    width: 8%;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0.4;
+    position: relative;
+    left: 10%;
+}
+.rank-text{
+    display: none;
+
+}
+/* 2nd section css */
+.card{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #2D5357;
+    border: 1px solid #B0EF96;
+    /* border: none; */
+}
+.card:hover{
+    box-shadow: 0 0 1rem 0 #B0EF96;
+    z-index: 999;
+}
+.card-icon{
+    color: white;
+    font-size: 70px;
+    padding-left: 8px;
+}
+.card-title{
+    color: #B0EF96;
+    font-weight: bold;
+    font-size: 36px;
+}
+.card-text{
+    color: #48898f;
+}
+/* 3rd section */
+.build-scale{
+    background: linear-gradient(90deg, rgba(72,137,143,1) 0%, rgba(176,239,150,0.3647584033613446) 50%, rgba(72,137,143,1) 100%);
+    margin: 0 50px;
+    border: #B0EF96;
+    border-radius: 20px;
+}
+.scale-text{
+    margin-bottom: 0;
+    color: #B0EF96;
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+.title span{
+    color: #B0EF96;
+}
+.sub-title{
+    font-weight: bold;
+    color: white;
+}
+.desc-text{
+    color: #2D5357;
+}
+.scale-candles{
+    display: flex;
+    justify-content: center;
+    background-image: url("../../assets/accent-grid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 10px;
+    overflow: auto;
+}
+.scale-candle-img-1{
+    width: 17%;
+    animation: sliding 2s ease-in-out infinite alternate;
+
+}
+.scale-candle-img-2{
+    width: 17%;
+    animation: sliding 1s ease-in-out infinite alternate;
+    margin-top: 90px;
+}
+.scale-candle-img-3{
+    width: 17%;
+    animation: sliding 1.5s ease-in-out infinite alternate;
+    margin-bottom: 80px;
+}
+.scale-candle-img-4{
+    width: 17%;
+    animation: sliding 1s ease-in-out infinite alternate;
+
+}
+/* 4th section */
+.binaryadv-text{
+    color: #B0EF96;
+    font-size: 60px;
+}
+.number{
+    color: #B0EF96;
+    font-weight: bold;
+}
+.selection-text{
+    color: #B0EF96;
+}
+.text{
+    color: #869C9E;
+}
+.num-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.choose-text{
+    color: white;
+    font-weight: bold;
+}
+.trade-text{
+    font-weight: bold;
+}
+.getfunded-text{
+    font-weight: bold;
+}
+.num-img > img{
+    width: 15%;
+}
+.choose-col{
+    display: flex;
+    align-items: center;
+}
+.gradient-img{
+    width: 130%;
+    margin-left: -20px;
+}
+.trade-col{
+    display: flex;
+    align-items: center;
+}
+.funded-col{
+    display: flex;
+    flex-direction: column;
+}
+/* 5th section */
+.yourTerm-text{
+    color: #B0EF96;
+}
+.trading-challenge{
+    margin-top: 110px;
+}
+.onestep-package-btns{
+    padding: .9rem 8rem;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 .2rem 0 black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.onestep-package-btns.activeClass{
+    border: 1px solid #B0EF96;
+}
+.twostep-package-btns{
+    padding: .9rem 8rem;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 .2rem 0 black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+.twostep-package-btns.activeClass{
+    border: 1px solid #B0EF96;
+}
+.twostepLite-package-btns{
+    padding: .9rem 7rem;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 .2rem 0 black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.twostepLite-package-btns.activeClass{
+    border: 1px solid #B0EF96;
+}
+.popular-badge{
+    background-color: #B0EF96;
+    color: #0B352B;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 8%;
+}
+.new-badge{
+    background-color: #B0EF96;
+    color: #0B352B;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    right: 30%;
+}
+.LITE-badge{
+    color: #B0EF96;
+    padding: .3rem .5rem;
+    font-size: 10px;
+    border:1px solid #B0EF96;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 10px;
+}
+/* 6th Section */
+.payout-card-width{
+    width: 23rem !important;
+}
+.payout-text{
+    color: white;
+    font-weight: bold;
+}
+.payout-text span{
+    color: #B0EF96;
+    font-weight: bold;
+}
+.time-payout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 7px;
+}
+.time-icon{
+    font-size: 30px;
+}
+.customer-support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 7px;
+}
+.support-icon{
+    font-size: 30px;
+}
+.border-end{
+    padding-right: 10px !important;
+}
+.bankcard-title{
+    font-size: 30px;
+}
+.cryptocard-title{
+    font-size: 30px;
+}
+.visacard-title{
+    font-size: 30px;
+}
+.payoutcards-img{
+    float: right;
+    filter: invert(1);
+    width: 20%;
+}
+.how-much-text{
+    color: #B0EF96;
+}
+.video-row{
+    background-color: #2D5357;
+    border: 1px solid #48898f;
+    border-radius: 20px;
+}
+.interview-btn{
+    position: absolute;
+    left: 9%;
+    bottom: 7%;
+    background-color: black;
+    opacity: 1;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* price range */
+.pricerange-bg{
+    background-color: #48898f;
+    width: 70%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.price-ranger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.range-field{
+    -webkit-appearance: none;
+    height: 7px;
+    border-radius: 3px;
+    outline: none;
+}
+.range-field::-webkit-slider-thumb{
+    -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid #0B352B;
+  box-shadow: 0 0 2rem #48898f;
+  overflow: visible;
+  cursor: pointer;
+}
+.profit-buttons{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.subtract-btnn{
+    border: none;
+    background-color: #0B352B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+}
+.add-btnn{
+    border: none;
+    background-color: #0B352B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+}
+.profit-value{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.percentage-range{
+    width: 100%;
+}
+.calculated-profit{
+    margin-right: auto;
+}
+input[type="range"] {
+    width: 100%;
+    color: #B0EF96 !important;
+  }
+.profit-text{
+    color: #0B352B;
+    font-size: 40px;
+    font-weight: bold;
+}
+.estimate-profit-text{
+    color: #0B352B;
+}
+/* Last Section */
+.faq-buttons{
+    background-color: #2D5357;
+    padding: .7rem 1rem;
+    color: #B0EF96;
+    font-weight: bold;
+    border: 1px solid #B0EF96;
+    outline: none;
+}
+.faq-buttons.active{
+    background-color: #B0EF96;
+    color: black;
+}
+.faq-buttons:hover{
+    background-color: #B0EF96;
+    color: black;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.accordion-button{
+    background-color: #346366;
+    border: .5px solid #48898f;
+    color: white;
+}
+.accordion-button:hover{
+    border: 1px solid #B0EF96;
+}
+.accordion-button:not(.collapsed){
+    background-color: #346366;
+    border: 1px solid #B0EF96;
+    color: white;
+}
+.accordion-button:focus{
+    border-color: #B0EF96 !important;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('../../assets/x.png');
+}
+.accordion-item{
+    background-color: #2D5357;
+    color: white;
+    font-size: 16px;
+}
+.accordion-body{
+    font-size: 16px;
+    border: 1px solid #B0EF96;
+    background-color: #346366;
+}
+.accordion-body > ul > li{
+    font-size: 16px;
+}
+.text{
+    color: #869C9E;
+}
+.asked-text{
+    color: #B0EF96;
+}
+
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes sliding {
+    0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-20px); /* Adjust the distance and direction of the float */
+      }
+  }
+/* Responsiveness */
+@media screen and (max-width:1024px){
+    .main-text{
+        font-size: 60px;
+    }
+    .sub-text{
+        font-size: 20px;
+    }
+    .main-section{
+        height: 90vh;
+    }
+    .main-section > div:first-child{
+        font-size: 16px;
+        padding: 14px 27px;
+    }
+    .candles-box-1{
+        width: 6%;
+        right: 0;
+        left: 10%;
+    }
+    .candles-box-2{
+        width: 6%;
+        left: -10%;
+    }
+    .payout-card-width{
+        width: 19rem !important;
+    }
+    .price-ranger{
+        gap: 38px;
+        margin-top: 38px;
+    }
+}
+@media screen and (max-width:994px){
+    .scale-candle-img-1{
+        width: 10%;
+    }
+    .scale-candle-img-2{
+        width: 10%;
+        margin-top: 90px;
+    }
+    .scale-candle-img-3{
+        width: 10%;
+        margin-bottom: 80px;
+    }
+    .scale-candle-img-4{
+        width: 10%;
+    }
+    .selection-row{
+        gap: 60px;
+    }
+    .gradient-img{
+        width: 20%;
+        margin-top: 40px;
+        margin-left: 10px;
+        transform: rotate(90deg);
+    }
+    .pricerange-bg{
+        margin-top: 40px;
+    }
+
+}
+@media screen and (max-width:769px){
+    .ai-inovation{
+        display: none;
+    }
+    .main-text{
+        font-size: 40px;
+    }
+    .main-section{
+        height: 80vh;
+    }
+    .sub-text{
+        font-size: 16px;
+    }
+    .rank-text{
+        display: block;
+        color: #869C9E !important;
+    }
+    .main-section > div:first-child{
+        font-size: 14px;
+        padding: 14px 27px;
+    }
+    .candles-box-1{
+        display: none;
+    }
+    .candles-box-2{
+        display: none;
+    }
+    .demo-btn{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .start-btn{
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 35px;
+        padding: 5px;
+        border-radius: 30px;
+    }
+    .social-icons{
+        display: flex;
+        gap: 15px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .scale-candle-img-1{
+        width: 8%;
+    }
+    .scale-candle-img-2{
+        width: 8%;
+        margin-top: 90px;
+    }
+    .scale-candle-img-3{
+        width: 8%;
+        margin-bottom: 80px;
+    }
+    .scale-candle-img-4{
+        width: 8%;
+    }
+    .build-scale{
+        margin: 0 10px;
+    }
+    .binaryadv-text{
+        color: #B0EF96;
+        font-size: 50px;
+    }
+    .number{
+        font-size: 35px;
+    }
+    .selection-text{
+        color: #B0EF96;
+    }
+    .choose-text{
+        font-size: 35px;
+    }
+    .trade-text{
+        font-size: 35px;
+    }
+    .getfunded-text{
+        font-size: 35px;
+    }
+    .num-img{
+        gap: 15px;
+    }
+    .num-img > img{
+        width: 10%;
+    }
+    .gradient-img{
+        width: 15%;
+        margin-top: 30px;
+    }
+    .choose-col{
+        gap: 10px;
+    }
+    .trade-col{
+        gap: 10px;
+    }
+    .funded-col{
+        gap: 10px;
+    }
+    .selection-row{
+        gap: 35px;
+    }
+    .payout-text{
+        font-size: 40px;
+        text-align: center;
+    }
+    .pricerange-bg{
+        width: 90%;
+    }
+    .onestep-package-btns{
+        padding: 1rem 3rem;
+        font-size: 16px;
+        position: relative;
+    }
+    .popular-badge {
+        left: 29%;
+        top: -10%;
+    }
+    .twostep-package-btns{
+        padding: .4rem 3rem;
+        font-size: 16px;
+    }
+    .twostepLite-package-btns{
+        padding: .4rem 3rem;
+        font-size: 16px;
+        position: relative;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .new-badge {
+        top: -14%;
+        left: 28%;
+    }
+    .LITE-badge{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .gradient-img{
+        width: 25%;
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width:426px){
+    .main-text{
+        font-size: 30px;
+    }
+    .sub-text{
+        font-size: 12px;
+    }
+    .main-section > div:first-child{
+        font-size: 10px;
+        padding: 12px 25px;
+    }
+    .demo-btn{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .start-btn{
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .social-icons{
+        display: flex;
+        gap: 13px;
+    }
+    .scale-candles{
+        gap: 20px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .build-scale{
+        margin: 0 8px;
+    }
+    .num-img{
+        gap: 15px;
+    }
+    .num-img>img{
+        width: 20%;
+    }
+    .gradient-img{
+        width: 20%;
+    }
+    .binaryadv-text{
+        font-size: 35px;
+    }
+    .onestep-package-btns{
+        padding: 1rem 2rem;
+    }
+    .twostep-package-btns{
+        padding: .4rem 2rem;
+    }
+    .twostepLite-package-btns{
+        padding: .4rem 2rem;
+    }
+    .profit-buttons{
+        gap: 60px;
+    }
+}
+@media screen and (max-width:376px){
+    .main-text{
+        font-size: 30px;
+    }
+    .sub-text{
+        font-size: 12px;
+    }
+    .main-section > div:first-child{
+        font-size: 10px;
+        padding: 12px 25px;
+    }
+    .demo-btn{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .start-btn{
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .social-icons{
+        display: flex;
+        gap: 10px;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .gradient-img{
+        width: 25%;
+    }
+    .onestep-package-btns{
+        padding: 1rem 1.7rem;
+    }
+    .twostep-package-btns{
+        padding: .4rem 1.7rem;
+    }
+    .twostepLite-package-btns{
+        padding: .4rem 1.7rem;
+    }
+    .popular-badge {
+        left: 25%;
+        top: -10%;
+    }
+}
+@media screen and (max-width:320px){
+
+    .main-text{
+        font-size: 30px;
+    }
+    .sub-text{
+        font-size: 12px;
+    }
+    .main-section > div:first-child{
+        font-size: 10px;
+        padding: 12px 25px;
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 15px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .pricerange-bg{
+        width: 95%;
+    }
+    .faq-buttons{
+        padding: .7rem .8rem;
+    }
+    .popular-badge {
+        left: 19%;
+        top: -10%;
+    }
+}

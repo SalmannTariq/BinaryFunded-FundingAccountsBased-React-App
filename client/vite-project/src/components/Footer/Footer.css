@@ -1,0 +1,25 @@
+.footer{
+    background-color: #2E5458;
+    margin-top: 20px;
+    border-top: 1px solid #346366;
+    padding: 2rem;
+}
+.footer-text{
+    text-decoration: none;
+    color: white;
+}
+.footer p:hover{
+    color: #B0EF96;
+}
+.policies{
+    background-color: #346366;
+    border-radius:10px;
+    padding: 1rem;
+    color: white;
+}
+.policies > h1{
+    color: #B0EF96;
+}
+.gmail-text{
+    color: #B0EF96;
+}
