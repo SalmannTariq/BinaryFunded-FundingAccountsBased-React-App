@@ -51,10 +51,11 @@ import bankTransfer from '../../assets/bank-transfer.svg'
 import videoThumbnail from '../../assets/video-thumbnail.jpg'
 import PriceRanger from './PriceRanger';
 import OneStepSlider from '../OneStepSlider/OneStepSlider';
-import TwoStepSlider from '../TwoStepSlider.jsx/TwoStepSlider';
+import TwoStepSlider from '../TwoStepSlider/TwoStepSlider';
 
 import Footer from '../Footer/Footer';
-import TwoStepLiteSlider from '../TwoStepLiteSLider/TwoStepLiteSlider';
+import TwoStepLiteSlider from "../TwoStepLiteSlider/TwoStepLiteSlider"
+// import TwoStepLiteSlider from '../TwoStepLiteSLider/TwoStepLiteSlider';
 import NavbarWhenUserLogin from '../Navbar/NavbarWhenUserLogin';
 import Navbar from '../Navbar/Navbar';
 
